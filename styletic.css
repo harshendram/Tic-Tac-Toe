@@ -1,0 +1,101 @@
+*{
+    margin :0;
+    padding :0;
+}
+
+body{
+    background-color:#ffbe0b; 
+    text-align : center;
+
+} 
+
+.container {
+    height: 70vh;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+
+  .game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+  }
+
+
+  .box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+    font-size: 8vmin;
+    color:whitesmoke;
+    background-color: #ff006e;
+    transition: opacity 0.8s ease;
+  }
+
+  /*sibling hover effect.If applying both id and class to an element of html how will it work?*/
+
+.box:hover{
+     cursor:pointer;
+     opacity:0.4s;
+
+}
+
+#reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+  }
+
+  #new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+
+#turn {
+    height:8vmin;
+    color:#8338ec;
+    font-size: 4vmin;
+
+}
+
+#tic {
+    font-size: 7vmin;
+
+}
+
+
+  #msg {
+    color: seagreen;
+    font-size: 7vmin;
+  }
+
+  .msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .hide {
+    display: none; 
+    /*specificity and order here two different classes has different styling but applied to the same ele according to rule the class styling which is written last(here-hide) will over ride the other styling(here msg-container) of diff class of same ele(div)*/
+  }
+
